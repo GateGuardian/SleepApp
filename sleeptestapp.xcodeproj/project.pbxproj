@@ -1,0 +1,1035 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60B708C0A1594AAEAA0E6973 /* libPods-sleeptestapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E46161DB72AE10D67ABB31E /* libPods-sleeptestapp.a */; };
+		630FB65C247545C000424B23 /* RecordingSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FB65A247545C000424B23 /* RecordingSettingCell.swift */; };
+		630FB65D247545C000424B23 /* RecordingSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630FB65B247545C000424B23 /* RecordingSettingCell.xib */; };
+		630FB6602475639500424B23 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FB65F2475639500424B23 /* DatePickerViewController.swift */; };
+		630FB6622475646F00424B23 /* UIStroyboard+ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FB6612475646F00424B23 /* UIStroyboard+ViewControllerFactory.swift */; };
+		630FB66524756BA500424B23 /* SleepInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FB66424756BA500424B23 /* SleepInteractorTests.swift */; };
+		630FB66724756C8600424B23 /* SleepInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630FB66624756C8600424B23 /* SleepInteractor.swift */; };
+		631C129F2472F2F0002E133A /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C129E2472F2F0002E133A /* AlarmViewModel.swift */; };
+		631C12A5247340B9002E133A /* RecordingSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C12A4247340B9002E133A /* RecordingSettingModel.swift */; };
+		631C12A72473CCB7002E133A /* AlarmViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C12A62473CCB7002E133A /* AlarmViewModelTests.swift */; };
+		631C12AA2473CE03002E133A /* RecordingSettingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C12A92473CE03002E133A /* RecordingSettingModelTests.swift */; };
+		631C12AC2473E979002E133A /* SleepSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C12AB2473E979002E133A /* SleepSetupViewController.swift */; };
+		631C12AF2473F328002E133A /* SleepSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C12AD2473F328002E133A /* SleepSettingCell.swift */; };
+		631C12B02473F328002E133A /* SleepSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 631C12AE2473F328002E133A /* SleepSettingCell.xib */; };
+		632736882477D83000230C64 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632736872477D83000230C64 /* AudioService.swift */; };
+		6327368A2477D86300230C64 /* AudioReplayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632736892477D86300230C64 /* AudioReplayService.swift */; };
+		6327368C2477D88800230C64 /* AudioDurationalReplayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327368B2477D88800230C64 /* AudioDurationalReplayService.swift */; };
+		6327368E2477D8E500230C64 /* AudioRecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327368D2477D8E500230C64 /* AudioRecordingService.swift */; };
+		632736922477DC3700230C64 /* MediaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632736912477DC3700230C64 /* MediaProvider.swift */; };
+		632736942477DCB500230C64 /* LocalMediaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632736932477DCB500230C64 /* LocalMediaProvider.swift */; };
+		635433D324766FA0000A80B2 /* SleepSetupValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635433D224766FA0000A80B2 /* SleepSetupValidator.swift */; };
+		6374DF06246A9ADE0058D872 /* SleepSetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374DF05246A9ADE0058D872 /* SleepSetupViewModel.swift */; };
+		6374DF08246A9B3A0058D872 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374DF07246A9B3A0058D872 /* SettingViewModel.swift */; };
+		6374DF0A246A9B910058D872 /* DurationPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374DF09246A9B910058D872 /* DurationPickerViewModel.swift */; };
+		6374DF0C246A9BBC0058D872 /* DatePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374DF0B246A9BBC0058D872 /* DatePickerViewModel.swift */; };
+		6374DF0F246A9C780058D872 /* SleepInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374DF0E246A9C780058D872 /* SleepInteractorProtocol.swift */; };
+		6374DF13246AD4090058D872 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374DF12246AD4090058D872 /* Date+String.swift */; };
+		6374DF15246C11F50058D872 /* SettingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374DF14246C11F50058D872 /* SettingViewModelTests.swift */; };
+		6374DF17246C1C4A0058D872 /* DatePickerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374DF16246C1C4A0058D872 /* DatePickerViewModelTests.swift */; };
+		6374DF19246C25E10058D872 /* DurationPickerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374DF18246C25E10058D872 /* DurationPickerViewModelTests.swift */; };
+		638903FE24616D51009C8A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638903FD24616D51009C8A28 /* AppDelegate.swift */; };
+		6389040024616D51009C8A28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638903FF24616D51009C8A28 /* SceneDelegate.swift */; };
+		6389040524616D51009C8A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6389040324616D51009C8A28 /* Main.storyboard */; };
+		6389040724616D54009C8A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6389040624616D54009C8A28 /* Assets.xcassets */; };
+		6389040A24616D54009C8A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6389040824616D54009C8A28 /* LaunchScreen.storyboard */; };
+		6389042024616F0F009C8A28 /* SleepSetupViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6389041F24616F0F009C8A28 /* SleepSetupViewModelTests.swift */; };
+		63BEBFF7247BE0580051EC98 /* AlarmSchedulerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BEBFF6247BE0580051EC98 /* AlarmSchedulerProtocol.swift */; };
+		63BEBFF9247BE35C0051EC98 /* AlarmScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BEBFF8247BE35C0051EC98 /* AlarmScheduler.swift */; };
+		63BEBFFD247C2A620051EC98 /* ErrorFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BEBFFC247C2A620051EC98 /* ErrorFormatter.swift */; };
+		63BEBFFF247C2B060051EC98 /* GeneralErrorFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BEBFFE247C2B060051EC98 /* GeneralErrorFormatter.swift */; };
+		63BEC003247C37F40051EC98 /* LocalMediaProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BEC002247C37F40051EC98 /* LocalMediaProviderTests.swift */; };
+		63BEC007247C3EB00051EC98 /* alarm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 63BEC005247C3EB00051EC98 /* alarm.m4a */; };
+		63BEC008247C3EB00051EC98 /* melody.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 63BEC006247C3EB00051EC98 /* melody.m4a */; };
+		63BEC00A247C48360051EC98 /* AlarmSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BEC009247C48360051EC98 /* AlarmSchedulerTests.swift */; };
+		63C1CC8E247D621F00D780CC /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CC8D247D621F00D780CC /* AudioPlayer.swift */; };
+		63C1CC90247D866800D780CC /* AudioDurationalPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CC8F247D866800D780CC /* AudioDurationalPlayerTests.swift */; };
+		63C1CC92247DADA000D780CC /* AudioDurationalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CC91247DADA000D780CC /* AudioDurationalPlayer.swift */; };
+		63C1CC94247DADFE00D780CC /* DispatchTimeInterval+Seconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CC93247DADFE00D780CC /* DispatchTimeInterval+Seconds.swift */; };
+		63C1CC96247E554900D780CC /* AudioRecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CC95247E554900D780CC /* AudioRecorderTests.swift */; };
+		63C1CC98247E573300D780CC /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CC97247E573300D780CC /* AudioRecorder.swift */; };
+		63C1CC9B247E9B7200D780CC /* PermissionsManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CC9A247E9B7200D780CC /* PermissionsManagerProtocol.swift */; };
+		63C1CC9D247E9C2700D780CC /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CC9C247E9C2700D780CC /* PermissionsManager.swift */; };
+		63C1CCA2247EA92200D780CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CCA1247EA92200D780CC /* Constants.swift */; };
+		63C1CCA5247EB30300D780CC /* AudioSessionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CCA4247EB30300D780CC /* AudioSessionConfigurator.swift */; };
+		63C1CCB7247EDBE100D780CC /* SleepInteractorStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CCB6247EDBE100D780CC /* SleepInteractorStubs.swift */; };
+		63C1CCBA247EE6A800D780CC /* SleepSetupViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374DF20246C2CDA0058D872 /* SleepSetupViewControllerTests.swift */; };
+		63C1CCBC247FA27100D780CC /* DatePickerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CCBB247FA27100D780CC /* DatePickerViewControllerTests.swift */; };
+		63C1CCBF247FB69500D780CC /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CCBE247FB69500D780CC /* DependencyContainer.swift */; };
+		63C1CCC1247FD52F00D780CC /* SleepSettingCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1CCC0247FD52F00D780CC /* SleepSettingCellModel.swift */; };
+		63C1CCC5247FE35800D780CC /* nature.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 63C1CCC3247FE35800D780CC /* nature.m4a */; };
+		63C1CCC6247FE35800D780CC /* alarm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 63C1CCC4247FE35800D780CC /* alarm.m4a */; };
+		63D6474C247D360800B713BE /* GeneralErrorFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D6474B247D360800B713BE /* GeneralErrorFormatterTests.swift */; };
+		63D6474E247D3A3A00B713BE /* AudioPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D6474D247D3A3A00B713BE /* AudioPlayerTests.swift */; };
+		63E4ED732485089100E44357 /* SessionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4ED722485089100E44357 /* SessionConfigurator.swift */; };
+		F63CFFD0270A74E3314D16E4 /* libPods-sleeptestappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB18C7ADA53A9F91C2D06C58 /* libPods-sleeptestappTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6389041124616D54009C8A28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 638903F224616D50009C8A28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 638903F924616D50009C8A28;
+			remoteInfo = sleeptestapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63B1DF7C248573DF00257B47 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D2DB7D49206D1C2F344434D /* Pods-sleeptestappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleeptestappTests.release.xcconfig"; path = "Target Support Files/Pods-sleeptestappTests/Pods-sleeptestappTests.release.xcconfig"; sourceTree = "<group>"; };
+		0E29010F0754D4A54FC8CAAB /* Pods_sleeptestappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sleeptestappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA4CA7E2AD2EC5FD182EDFD /* Pods-sleeptestapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleeptestapp.release.xcconfig"; path = "Target Support Files/Pods-sleeptestapp/Pods-sleeptestapp.release.xcconfig"; sourceTree = "<group>"; };
+		4E46161DB72AE10D67ABB31E /* libPods-sleeptestapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sleeptestapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		630FB65A247545C000424B23 /* RecordingSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSettingCell.swift; sourceTree = "<group>"; };
+		630FB65B247545C000424B23 /* RecordingSettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingSettingCell.xib; sourceTree = "<group>"; };
+		630FB65F2475639500424B23 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		630FB6612475646F00424B23 /* UIStroyboard+ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStroyboard+ViewControllerFactory.swift"; sourceTree = "<group>"; };
+		630FB66424756BA500424B23 /* SleepInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepInteractorTests.swift; sourceTree = "<group>"; };
+		630FB66624756C8600424B23 /* SleepInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepInteractor.swift; sourceTree = "<group>"; };
+		631C129E2472F2F0002E133A /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
+		631C12A4247340B9002E133A /* RecordingSettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSettingModel.swift; sourceTree = "<group>"; };
+		631C12A62473CCB7002E133A /* AlarmViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModelTests.swift; sourceTree = "<group>"; };
+		631C12A92473CE03002E133A /* RecordingSettingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSettingModelTests.swift; sourceTree = "<group>"; };
+		631C12AB2473E979002E133A /* SleepSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetupViewController.swift; sourceTree = "<group>"; };
+		631C12AD2473F328002E133A /* SleepSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSettingCell.swift; sourceTree = "<group>"; };
+		631C12AE2473F328002E133A /* SleepSettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepSettingCell.xib; sourceTree = "<group>"; };
+		632736872477D83000230C64 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		632736892477D86300230C64 /* AudioReplayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioReplayService.swift; sourceTree = "<group>"; };
+		6327368B2477D88800230C64 /* AudioDurationalReplayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDurationalReplayService.swift; sourceTree = "<group>"; };
+		6327368D2477D8E500230C64 /* AudioRecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingService.swift; sourceTree = "<group>"; };
+		632736912477DC3700230C64 /* MediaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaProvider.swift; sourceTree = "<group>"; };
+		632736932477DCB500230C64 /* LocalMediaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMediaProvider.swift; sourceTree = "<group>"; };
+		635433D224766FA0000A80B2 /* SleepSetupValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetupValidator.swift; sourceTree = "<group>"; };
+		6374DF05246A9ADE0058D872 /* SleepSetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetupViewModel.swift; sourceTree = "<group>"; };
+		6374DF07246A9B3A0058D872 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		6374DF09246A9B910058D872 /* DurationPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPickerViewModel.swift; sourceTree = "<group>"; };
+		6374DF0B246A9BBC0058D872 /* DatePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewModel.swift; sourceTree = "<group>"; };
+		6374DF0E246A9C780058D872 /* SleepInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepInteractorProtocol.swift; sourceTree = "<group>"; };
+		6374DF12246AD4090058D872 /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
+		6374DF14246C11F50058D872 /* SettingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModelTests.swift; sourceTree = "<group>"; };
+		6374DF16246C1C4A0058D872 /* DatePickerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewModelTests.swift; sourceTree = "<group>"; };
+		6374DF18246C25E10058D872 /* DurationPickerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPickerViewModelTests.swift; sourceTree = "<group>"; };
+		6374DF20246C2CDA0058D872 /* SleepSetupViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetupViewControllerTests.swift; sourceTree = "<group>"; };
+		638903FA24616D50009C8A28 /* sleeptestapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sleeptestapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		638903FD24616D51009C8A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		638903FF24616D51009C8A28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6389040424616D51009C8A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6389040624616D54009C8A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6389040924616D54009C8A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6389040B24616D54009C8A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6389041024616D54009C8A28 /* sleeptestappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sleeptestappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6389041624616D54009C8A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6389041F24616F0F009C8A28 /* SleepSetupViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSetupViewModelTests.swift; sourceTree = "<group>"; };
+		63B1DF6E248573DE00257B47 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		63B1DF70248573DE00257B47 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		63BEBFF6247BE0580051EC98 /* AlarmSchedulerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSchedulerProtocol.swift; sourceTree = "<group>"; };
+		63BEBFF8247BE35C0051EC98 /* AlarmScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmScheduler.swift; sourceTree = "<group>"; };
+		63BEBFFC247C2A620051EC98 /* ErrorFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorFormatter.swift; sourceTree = "<group>"; };
+		63BEBFFE247C2B060051EC98 /* GeneralErrorFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralErrorFormatter.swift; sourceTree = "<group>"; };
+		63BEC002247C37F40051EC98 /* LocalMediaProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMediaProviderTests.swift; sourceTree = "<group>"; };
+		63BEC005247C3EB00051EC98 /* alarm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarm.m4a; sourceTree = "<group>"; };
+		63BEC006247C3EB00051EC98 /* melody.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = melody.m4a; sourceTree = "<group>"; };
+		63BEC009247C48360051EC98 /* AlarmSchedulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSchedulerTests.swift; sourceTree = "<group>"; };
+		63C1CC8D247D621F00D780CC /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		63C1CC8F247D866800D780CC /* AudioDurationalPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDurationalPlayerTests.swift; sourceTree = "<group>"; };
+		63C1CC91247DADA000D780CC /* AudioDurationalPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDurationalPlayer.swift; sourceTree = "<group>"; };
+		63C1CC93247DADFE00D780CC /* DispatchTimeInterval+Seconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchTimeInterval+Seconds.swift"; sourceTree = "<group>"; };
+		63C1CC95247E554900D780CC /* AudioRecorderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderTests.swift; sourceTree = "<group>"; };
+		63C1CC97247E573300D780CC /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		63C1CC9A247E9B7200D780CC /* PermissionsManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManagerProtocol.swift; sourceTree = "<group>"; };
+		63C1CC9C247E9C2700D780CC /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
+		63C1CCA1247EA92200D780CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		63C1CCA4247EB30300D780CC /* AudioSessionConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionConfigurator.swift; sourceTree = "<group>"; };
+		63C1CCB6247EDBE100D780CC /* SleepInteractorStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepInteractorStubs.swift; sourceTree = "<group>"; };
+		63C1CCBB247FA27100D780CC /* DatePickerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewControllerTests.swift; sourceTree = "<group>"; };
+		63C1CCBE247FB69500D780CC /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		63C1CCC0247FD52F00D780CC /* SleepSettingCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSettingCellModel.swift; sourceTree = "<group>"; };
+		63C1CCC3247FE35800D780CC /* nature.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nature.m4a; sourceTree = "<group>"; };
+		63C1CCC4247FE35800D780CC /* alarm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarm.m4a; sourceTree = "<group>"; };
+		63D6474B247D360800B713BE /* GeneralErrorFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralErrorFormatterTests.swift; sourceTree = "<group>"; };
+		63D6474D247D3A3A00B713BE /* AudioPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerTests.swift; sourceTree = "<group>"; };
+		63E4ED722485089100E44357 /* SessionConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionConfigurator.swift; sourceTree = "<group>"; };
+		7198636C658525862B019519 /* Pods-sleeptestappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleeptestappUITests.debug.xcconfig"; path = "Target Support Files/Pods-sleeptestappUITests/Pods-sleeptestappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A34BF03A3FDA4E8E072D338 /* Pods-sleeptestappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleeptestappUITests.release.xcconfig"; path = "Target Support Files/Pods-sleeptestappUITests/Pods-sleeptestappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A2308ADCE956A16F452B1FFC /* Pods-sleeptestapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleeptestapp.debug.xcconfig"; path = "Target Support Files/Pods-sleeptestapp/Pods-sleeptestapp.debug.xcconfig"; sourceTree = "<group>"; };
+		FA7B5889940B97BE87283EF7 /* Pods-sleeptestappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleeptestappTests.debug.xcconfig"; path = "Target Support Files/Pods-sleeptestappTests/Pods-sleeptestappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB18C7ADA53A9F91C2D06C58 /* libPods-sleeptestappTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sleeptestappTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		638903F724616D50009C8A28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B708C0A1594AAEAA0E6973 /* libPods-sleeptestapp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6389040D24616D54009C8A28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63CFFD0270A74E3314D16E4 /* libPods-sleeptestappTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630FB66324756B0F00424B23 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				630FB66424756BA500424B23 /* SleepInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		631C12A82473CDE7002E133A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6389041F24616F0F009C8A28 /* SleepSetupViewModelTests.swift */,
+				6374DF14246C11F50058D872 /* SettingViewModelTests.swift */,
+				6374DF16246C1C4A0058D872 /* DatePickerViewModelTests.swift */,
+				6374DF18246C25E10058D872 /* DurationPickerViewModelTests.swift */,
+				631C12A62473CCB7002E133A /* AlarmViewModelTests.swift */,
+				631C12A92473CE03002E133A /* RecordingSettingModelTests.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		632736862477C44500230C64 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				632736892477D86300230C64 /* AudioReplayService.swift */,
+				6327368B2477D88800230C64 /* AudioDurationalReplayService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		632736902477DC1900230C64 /* MediaProvider */ = {
+			isa = PBXGroup;
+			children = (
+				632736912477DC3700230C64 /* MediaProvider.swift */,
+				632736932477DCB500230C64 /* LocalMediaProvider.swift */,
+			);
+			path = MediaProvider;
+			sourceTree = "<group>";
+		};
+		635433D124766F78000A80B2 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				635433D224766FA0000A80B2 /* SleepSetupValidator.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		635433D42476AC33000A80B2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63C1CC99247E9B5F00D780CC /* Permissions */,
+				63BEBFF5247BE0280051EC98 /* Alarm */,
+				632736902477DC1900230C64 /* MediaProvider */,
+				635433D52476AC3B000A80B2 /* Audio */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		635433D52476AC3B000A80B2 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				63C1CCA3247EB2E000D780CC /* AudioSessionConfigurator */,
+				632736872477D83000230C64 /* AudioService.swift */,
+				635433D82476ACA1000A80B2 /* AudioRecordingService */,
+				635433D62476AC81000A80B2 /* AudioReplayService */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		635433D62476AC81000A80B2 /* AudioReplayService */ = {
+			isa = PBXGroup;
+			children = (
+				632736862477C44500230C64 /* Protocols */,
+				63C1CC8D247D621F00D780CC /* AudioPlayer.swift */,
+				63C1CC91247DADA000D780CC /* AudioDurationalPlayer.swift */,
+			);
+			path = AudioReplayService;
+			sourceTree = "<group>";
+		};
+		635433D82476ACA1000A80B2 /* AudioRecordingService */ = {
+			isa = PBXGroup;
+			children = (
+				6327368D2477D8E500230C64 /* AudioRecordingService.swift */,
+				63C1CC97247E573300D780CC /* AudioRecorder.swift */,
+			);
+			path = AudioRecordingService;
+			sourceTree = "<group>";
+		};
+		6374DF04246A9AC50058D872 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6374DF05246A9ADE0058D872 /* SleepSetupViewModel.swift */,
+				6374DF07246A9B3A0058D872 /* SettingViewModel.swift */,
+				631C12A4247340B9002E133A /* RecordingSettingModel.swift */,
+				6374DF09246A9B910058D872 /* DurationPickerViewModel.swift */,
+				6374DF0B246A9BBC0058D872 /* DatePickerViewModel.swift */,
+				631C129E2472F2F0002E133A /* AlarmViewModel.swift */,
+				63C1CCC0247FD52F00D780CC /* SleepSettingCellModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6374DF0D246A9C4F0058D872 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6374DF0E246A9C780058D872 /* SleepInteractorProtocol.swift */,
+				630FB66624756C8600424B23 /* SleepInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6374DF11246AD3F40058D872 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				630FB6612475646F00424B23 /* UIStroyboard+ViewControllerFactory.swift */,
+				6374DF12246AD4090058D872 /* Date+String.swift */,
+				63C1CC93247DADFE00D780CC /* DispatchTimeInterval+Seconds.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6374DF1B246C2C540058D872 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6374DF1D246C2C7F0058D872 /* Cells */,
+				6374DF1C246C2C710058D872 /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6374DF1C246C2C710058D872 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				631C12AB2473E979002E133A /* SleepSetupViewController.swift */,
+				630FB65F2475639500424B23 /* DatePickerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6374DF1D246C2C7F0058D872 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				631C12AD2473F328002E133A /* SleepSettingCell.swift */,
+				631C12AE2473F328002E133A /* SleepSettingCell.xib */,
+				630FB65A247545C000424B23 /* RecordingSettingCell.swift */,
+				630FB65B247545C000424B23 /* RecordingSettingCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6374DF1E246C2CB30058D872 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6374DF20246C2CDA0058D872 /* SleepSetupViewControllerTests.swift */,
+				63C1CCBB247FA27100D780CC /* DatePickerViewControllerTests.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		638903F124616D50009C8A28 = {
+			isa = PBXGroup;
+			children = (
+				638903FC24616D50009C8A28 /* sleeptestapp */,
+				6389041324616D54009C8A28 /* sleeptestappTests */,
+				638903FB24616D50009C8A28 /* Products */,
+				80648CE9E13A16173992E5D9 /* Pods */,
+				EFBC78607AE4B6149A1AF5A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		638903FB24616D50009C8A28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				638903FA24616D50009C8A28 /* sleeptestapp.app */,
+				6389041024616D54009C8A28 /* sleeptestappTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		638903FC24616D50009C8A28 /* sleeptestapp */ = {
+			isa = PBXGroup;
+			children = (
+				63C1CCC2247FE35800D780CC /* Resources */,
+				63C1CCBD247FB67600D780CC /* DependencyContainer */,
+				63C1CCA0247EA90F00D780CC /* Common */,
+				63BEBFFA247C29D70051EC98 /* Helpers */,
+				635433D42476AC33000A80B2 /* Services */,
+				635433D124766F78000A80B2 /* Validators */,
+				6374DF1B246C2C540058D872 /* UI */,
+				6374DF11246AD3F40058D872 /* Extensions */,
+				6374DF0D246A9C4F0058D872 /* Interactor */,
+				6374DF04246A9AC50058D872 /* Presentation */,
+				638903FD24616D51009C8A28 /* AppDelegate.swift */,
+				638903FF24616D51009C8A28 /* SceneDelegate.swift */,
+				6389040324616D51009C8A28 /* Main.storyboard */,
+				6389040624616D54009C8A28 /* Assets.xcassets */,
+				6389040824616D54009C8A28 /* LaunchScreen.storyboard */,
+				6389040B24616D54009C8A28 /* Info.plist */,
+			);
+			path = sleeptestapp;
+			sourceTree = "<group>";
+		};
+		6389041324616D54009C8A28 /* sleeptestappTests */ = {
+			isa = PBXGroup;
+			children = (
+				6374DF1E246C2CB30058D872 /* UI */,
+				63C1CCB5247EDBC300D780CC /* CommonPublic */,
+				63D6474A247D35F600B713BE /* Helpers */,
+				63BEC004247C3E7E0051EC98 /* Resources */,
+				63BEC000247C37740051EC98 /* Services */,
+				630FB66324756B0F00424B23 /* Interactor */,
+				631C12A82473CDE7002E133A /* Presentation */,
+				6389041624616D54009C8A28 /* Info.plist */,
+			);
+			path = sleeptestappTests;
+			sourceTree = "<group>";
+		};
+		63BEBFF5247BE0280051EC98 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				63BEBFF6247BE0580051EC98 /* AlarmSchedulerProtocol.swift */,
+				63BEBFF8247BE35C0051EC98 /* AlarmScheduler.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		63BEBFFA247C29D70051EC98 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63BEBFFB247C29F00051EC98 /* ErrorFormatter */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63BEBFFB247C29F00051EC98 /* ErrorFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				63BEBFFC247C2A620051EC98 /* ErrorFormatter.swift */,
+				63BEBFFE247C2B060051EC98 /* GeneralErrorFormatter.swift */,
+			);
+			path = ErrorFormatter;
+			sourceTree = "<group>";
+		};
+		63BEC000247C37740051EC98 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63BEC002247C37F40051EC98 /* LocalMediaProviderTests.swift */,
+				63BEC009247C48360051EC98 /* AlarmSchedulerTests.swift */,
+				63D6474D247D3A3A00B713BE /* AudioPlayerTests.swift */,
+				63C1CC8F247D866800D780CC /* AudioDurationalPlayerTests.swift */,
+				63C1CC95247E554900D780CC /* AudioRecorderTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		63BEC004247C3E7E0051EC98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63BEC005247C3EB00051EC98 /* alarm.m4a */,
+				63BEC006247C3EB00051EC98 /* melody.m4a */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63C1CC99247E9B5F00D780CC /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				63C1CC9A247E9B7200D780CC /* PermissionsManagerProtocol.swift */,
+				63C1CC9C247E9C2700D780CC /* PermissionsManager.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		63C1CCA0247EA90F00D780CC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				63C1CCA1247EA92200D780CC /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		63C1CCA3247EB2E000D780CC /* AudioSessionConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				63C1CCA4247EB30300D780CC /* AudioSessionConfigurator.swift */,
+				63E4ED722485089100E44357 /* SessionConfigurator.swift */,
+			);
+			path = AudioSessionConfigurator;
+			sourceTree = "<group>";
+		};
+		63C1CCB5247EDBC300D780CC /* CommonPublic */ = {
+			isa = PBXGroup;
+			children = (
+				63C1CCB6247EDBE100D780CC /* SleepInteractorStubs.swift */,
+			);
+			path = CommonPublic;
+			sourceTree = "<group>";
+		};
+		63C1CCBD247FB67600D780CC /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				63C1CCBE247FB69500D780CC /* DependencyContainer.swift */,
+			);
+			path = DependencyContainer;
+			sourceTree = "<group>";
+		};
+		63C1CCC2247FE35800D780CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63C1CCC3247FE35800D780CC /* nature.m4a */,
+				63C1CCC4247FE35800D780CC /* alarm.m4a */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63D6474A247D35F600B713BE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63D6474B247D360800B713BE /* GeneralErrorFormatterTests.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		80648CE9E13A16173992E5D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2308ADCE956A16F452B1FFC /* Pods-sleeptestapp.debug.xcconfig */,
+				1BA4CA7E2AD2EC5FD182EDFD /* Pods-sleeptestapp.release.xcconfig */,
+				FA7B5889940B97BE87283EF7 /* Pods-sleeptestappTests.debug.xcconfig */,
+				0D2DB7D49206D1C2F344434D /* Pods-sleeptestappTests.release.xcconfig */,
+				7198636C658525862B019519 /* Pods-sleeptestappUITests.debug.xcconfig */,
+				9A34BF03A3FDA4E8E072D338 /* Pods-sleeptestappUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EFBC78607AE4B6149A1AF5A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E29010F0754D4A54FC8CAAB /* Pods_sleeptestappUITests.framework */,
+				4E46161DB72AE10D67ABB31E /* libPods-sleeptestapp.a */,
+				FB18C7ADA53A9F91C2D06C58 /* libPods-sleeptestappTests.a */,
+				63B1DF6E248573DE00257B47 /* UserNotifications.framework */,
+				63B1DF70248573DE00257B47 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		638903F924616D50009C8A28 /* sleeptestapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6389041924616D54009C8A28 /* Build configuration list for PBXNativeTarget "sleeptestapp" */;
+			buildPhases = (
+				04AD223638723EB9331B9ED7 /* [CP] Check Pods Manifest.lock */,
+				638903F624616D50009C8A28 /* Sources */,
+				638903F724616D50009C8A28 /* Frameworks */,
+				638903F824616D50009C8A28 /* Resources */,
+				63B1DF7C248573DF00257B47 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sleeptestapp;
+			productName = sleeptestapp;
+			productReference = 638903FA24616D50009C8A28 /* sleeptestapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6389040F24616D54009C8A28 /* sleeptestappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6389041C24616D54009C8A28 /* Build configuration list for PBXNativeTarget "sleeptestappTests" */;
+			buildPhases = (
+				D2C1ED0B09CAE056B2E78BB8 /* [CP] Check Pods Manifest.lock */,
+				6389040C24616D54009C8A28 /* Sources */,
+				6389040D24616D54009C8A28 /* Frameworks */,
+				6389040E24616D54009C8A28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6389041224616D54009C8A28 /* PBXTargetDependency */,
+			);
+			name = sleeptestappTests;
+			productName = sleeptestappTests;
+			productReference = 6389041024616D54009C8A28 /* sleeptestappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		638903F224616D50009C8A28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = ik;
+				TargetAttributes = {
+					638903F924616D50009C8A28 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					6389040F24616D54009C8A28 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 638903F924616D50009C8A28;
+					};
+				};
+			};
+			buildConfigurationList = 638903F524616D50009C8A28 /* Build configuration list for PBXProject "sleeptestapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 638903F124616D50009C8A28;
+			productRefGroup = 638903FB24616D50009C8A28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				638903F924616D50009C8A28 /* sleeptestapp */,
+				6389040F24616D54009C8A28 /* sleeptestappTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		638903F824616D50009C8A28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631C12B02473F328002E133A /* SleepSettingCell.xib in Resources */,
+				63C1CCC6247FE35800D780CC /* alarm.m4a in Resources */,
+				6389040A24616D54009C8A28 /* LaunchScreen.storyboard in Resources */,
+				6389040724616D54009C8A28 /* Assets.xcassets in Resources */,
+				63C1CCC5247FE35800D780CC /* nature.m4a in Resources */,
+				630FB65D247545C000424B23 /* RecordingSettingCell.xib in Resources */,
+				6389040524616D51009C8A28 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6389040E24616D54009C8A28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63BEC008247C3EB00051EC98 /* melody.m4a in Resources */,
+				63BEC007247C3EB00051EC98 /* alarm.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04AD223638723EB9331B9ED7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sleeptestapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2C1ED0B09CAE056B2E78BB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sleeptestappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		638903F624616D50009C8A28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630FB65C247545C000424B23 /* RecordingSettingCell.swift in Sources */,
+				63BEBFFD247C2A620051EC98 /* ErrorFormatter.swift in Sources */,
+				6374DF08246A9B3A0058D872 /* SettingViewModel.swift in Sources */,
+				6327368C2477D88800230C64 /* AudioDurationalReplayService.swift in Sources */,
+				63C1CCC1247FD52F00D780CC /* SleepSettingCellModel.swift in Sources */,
+				63C1CC94247DADFE00D780CC /* DispatchTimeInterval+Seconds.swift in Sources */,
+				631C12AC2473E979002E133A /* SleepSetupViewController.swift in Sources */,
+				63BEBFFF247C2B060051EC98 /* GeneralErrorFormatter.swift in Sources */,
+				63BEBFF9247BE35C0051EC98 /* AlarmScheduler.swift in Sources */,
+				630FB66724756C8600424B23 /* SleepInteractor.swift in Sources */,
+				632736882477D83000230C64 /* AudioService.swift in Sources */,
+				63C1CCBF247FB69500D780CC /* DependencyContainer.swift in Sources */,
+				63C1CC9B247E9B7200D780CC /* PermissionsManagerProtocol.swift in Sources */,
+				638903FE24616D51009C8A28 /* AppDelegate.swift in Sources */,
+				6374DF0A246A9B910058D872 /* DurationPickerViewModel.swift in Sources */,
+				632736922477DC3700230C64 /* MediaProvider.swift in Sources */,
+				631C129F2472F2F0002E133A /* AlarmViewModel.swift in Sources */,
+				6374DF0F246A9C780058D872 /* SleepInteractorProtocol.swift in Sources */,
+				6374DF13246AD4090058D872 /* Date+String.swift in Sources */,
+				6327368A2477D86300230C64 /* AudioReplayService.swift in Sources */,
+				631C12AF2473F328002E133A /* SleepSettingCell.swift in Sources */,
+				631C12A5247340B9002E133A /* RecordingSettingModel.swift in Sources */,
+				630FB6602475639500424B23 /* DatePickerViewController.swift in Sources */,
+				632736942477DCB500230C64 /* LocalMediaProvider.swift in Sources */,
+				63C1CC98247E573300D780CC /* AudioRecorder.swift in Sources */,
+				63E4ED732485089100E44357 /* SessionConfigurator.swift in Sources */,
+				630FB6622475646F00424B23 /* UIStroyboard+ViewControllerFactory.swift in Sources */,
+				63C1CCA2247EA92200D780CC /* Constants.swift in Sources */,
+				63C1CCA5247EB30300D780CC /* AudioSessionConfigurator.swift in Sources */,
+				6374DF06246A9ADE0058D872 /* SleepSetupViewModel.swift in Sources */,
+				63C1CC8E247D621F00D780CC /* AudioPlayer.swift in Sources */,
+				63BEBFF7247BE0580051EC98 /* AlarmSchedulerProtocol.swift in Sources */,
+				6389040024616D51009C8A28 /* SceneDelegate.swift in Sources */,
+				635433D324766FA0000A80B2 /* SleepSetupValidator.swift in Sources */,
+				6327368E2477D8E500230C64 /* AudioRecordingService.swift in Sources */,
+				63C1CC92247DADA000D780CC /* AudioDurationalPlayer.swift in Sources */,
+				63C1CC9D247E9C2700D780CC /* PermissionsManager.swift in Sources */,
+				6374DF0C246A9BBC0058D872 /* DatePickerViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6389040C24616D54009C8A28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C1CC96247E554900D780CC /* AudioRecorderTests.swift in Sources */,
+				631C12AA2473CE03002E133A /* RecordingSettingModelTests.swift in Sources */,
+				63D6474C247D360800B713BE /* GeneralErrorFormatterTests.swift in Sources */,
+				6374DF19246C25E10058D872 /* DurationPickerViewModelTests.swift in Sources */,
+				631C12A72473CCB7002E133A /* AlarmViewModelTests.swift in Sources */,
+				63C1CCBA247EE6A800D780CC /* SleepSetupViewControllerTests.swift in Sources */,
+				630FB66524756BA500424B23 /* SleepInteractorTests.swift in Sources */,
+				63C1CC90247D866800D780CC /* AudioDurationalPlayerTests.swift in Sources */,
+				63BEC003247C37F40051EC98 /* LocalMediaProviderTests.swift in Sources */,
+				63C1CCB7247EDBE100D780CC /* SleepInteractorStubs.swift in Sources */,
+				63D6474E247D3A3A00B713BE /* AudioPlayerTests.swift in Sources */,
+				6374DF17246C1C4A0058D872 /* DatePickerViewModelTests.swift in Sources */,
+				63C1CCBC247FA27100D780CC /* DatePickerViewControllerTests.swift in Sources */,
+				63BEC00A247C48360051EC98 /* AlarmSchedulerTests.swift in Sources */,
+				6389042024616F0F009C8A28 /* SleepSetupViewModelTests.swift in Sources */,
+				6374DF15246C11F50058D872 /* SettingViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6389041224616D54009C8A28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 638903F924616D50009C8A28 /* sleeptestapp */;
+			targetProxy = 6389041124616D54009C8A28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6389040324616D51009C8A28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6389040424616D51009C8A28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6389040824616D54009C8A28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6389040924616D54009C8A28 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6389041724616D54009C8A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6389041824616D54009C8A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6389041A24616D54009C8A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2308ADCE956A16F452B1FFC /* Pods-sleeptestapp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YP2JKL463J;
+				INFOPLIST_FILE = sleeptestapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ik.sleeptestapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6389041B24616D54009C8A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA4CA7E2AD2EC5FD182EDFD /* Pods-sleeptestapp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YP2JKL463J;
+				INFOPLIST_FILE = sleeptestapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ik.sleeptestapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6389041D24616D54009C8A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA7B5889940B97BE87283EF7 /* Pods-sleeptestappTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YP2JKL463J;
+				INFOPLIST_FILE = sleeptestappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ik.sleeptestappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sleeptestapp.app/sleeptestapp";
+			};
+			name = Debug;
+		};
+		6389041E24616D54009C8A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D2DB7D49206D1C2F344434D /* Pods-sleeptestappTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YP2JKL463J;
+				INFOPLIST_FILE = sleeptestappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ik.sleeptestappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sleeptestapp.app/sleeptestapp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		638903F524616D50009C8A28 /* Build configuration list for PBXProject "sleeptestapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6389041724616D54009C8A28 /* Debug */,
+				6389041824616D54009C8A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6389041924616D54009C8A28 /* Build configuration list for PBXNativeTarget "sleeptestapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6389041A24616D54009C8A28 /* Debug */,
+				6389041B24616D54009C8A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6389041C24616D54009C8A28 /* Build configuration list for PBXNativeTarget "sleeptestappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6389041D24616D54009C8A28 /* Debug */,
+				6389041E24616D54009C8A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 638903F224616D50009C8A28 /* Project object */;
+}
